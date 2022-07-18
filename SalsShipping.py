@@ -3,17 +3,17 @@ import random
 
 # Variables
 weight = random.randint(1,20)
-flat_charges_ground_shipping = 20
+flat_charge_ground_shipping = 20
 
 # Ground Shipping
 if weight > 10:
-  cost = 4.75 * weight + flat_charges_ground_shipping
+  cost = 4.75 * weight + flat_charge_ground_shipping
 elif weight > 6:
-  cost = 4 * weight + flat_charges_ground_shipping
+  cost = 4 * weight + flat_charge_ground_shipping
 elif weight > 2:
-  cost = 3 * weight + flat_charges_ground_shipping
+  cost = 3 * weight + flat_charge_ground_shipping
 else:
-  cost = 1.5 * weight + flat_charges_ground_shipping
+  cost = 1.5 * weight + flat_charge_ground_shipping
 
 # Ground Shipping Premium 
 ground_shipping_premium_cost = 125.00
