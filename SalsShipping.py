@@ -39,6 +39,6 @@ print("")
 print("")
 
 # The cheapest
-all_ = [["Ground Shipping", cost], ["Ground Shipping Premium", ground_shipping_premium_cost], ["Drone Shipping", drone_cost]]
+all_ = [[cost, "Ground Shipping"], [ground_shipping_premium_cost, "Ground Shipping Premium"], [drone_cost, "Drone Shipping"]]
 sorted_all = sorted(all_)
-print("The cheapest way is " + sorted_all[1][0] + " and it costs: " + str(sorted_all[1][1]) + "$")
+print("The cheapest way is " + sorted_all[0][1] + " and it costs: " + str(sorted_all[0][0]) + "$")
